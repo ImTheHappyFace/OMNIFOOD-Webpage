@@ -1,0 +1,626 @@
+/*
+
+Color used frequently.
+1- Orange= #e67e22
+
+*/
+
+
+
+.clerafix{zoom:1}
+.clearfix:after{
+	content: '.';
+	clear: both;
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html{
+	color: #555;
+	font-family: 'Lato', sans-serif;
+	font-weight: 200;
+	font-size: 20px;
+	
+	text-rendering: optimizeLegibility;
+
+}
+
+/*-------------------------------------------*/
+/*Reusable Content*/
+
+
+.row{
+	max-width: 1140px;
+	margin: 0px auto;
+	position: relative;
+}
+
+section{
+	padding: 60px 0px;
+}
+
+
+header{
+	background-image: linear-gradient( rgba(0,0,0,0.8),rgba(0,0,0,0.8) ), url(../images/hero.jpg);
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+h1{
+	margin: 0;
+	color: #fff;
+	font-size: 240%;
+	font-weight: 100;
+	text-transform: uppercase; 
+	word-spacing: 4px;
+}
+
+h2{
+	margin: 0;
+	color: black;
+	font-size: 180%;
+	font-weight: 300;
+	text-transform: uppercase; 
+	word-spacing: 4px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+h2:after{
+	display: block;
+	height: 2px;
+	background-color:#e67e22;
+	content: "";
+	width: 100px;
+	margin: 30px auto ;
+
+}
+
+.hero-text-box{
+	position: absolute;
+	width: 1140px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+
+
+}
+
+h3{
+	margin: 0;
+	color:black ;
+	font-size: 110%;
+	font-weight: 300;
+	text-transform: uppercase; 
+	word-spacing: 1px;
+	margin-bottom: 10px;
+}
+
+
+
+.box{
+	padding: 1%;
+}
+
+
+
+
+/*-------------------------------
+Paragraphs
+---------------------------------
+*/
+
+.long-para{
+	line-height: 145%; 
+	width: 70%;
+	margin-left:15%; 
+}
+
+.box p{
+	line-height: 145%;
+	font-size: 90%;
+}
+
+
+
+
+
+
+
+
+
+/*
+----------------------------------------------------------
+Buttons - Top Images
+-------------------------------------------------------------
+*/
+
+.btn:link,
+.btn:visited,
+input[type=submit]{
+	display: inline-block;
+	padding: 5px 4px;
+	text-decoration: none;
+	border-radius: 280px;
+	font-weight: 300;
+	color: white;
+	margin-top: 8px;
+	font-size:110%
+}
+
+/*----------------------
+Buttons 1-I'm Hugry
+          2- Show me more   
+-------------------------
+*/
+
+.btn-full:link,
+.btn-full:visited,
+input[type=submit]
+{
+	background-color: #e67e22;
+	margin-right: 10px;
+	border: 1px solid #e67e22;
+	padding: 10px;
+	margin-top: 15px;
+
+}
+
+
+.btn-ghost:link,
+.btn-ghost:visited
+{
+	margin-right: 10px;
+	border: 1px solid #e67e22;
+	color: #e67e22;
+	padding: 10px;
+	margin-top: 15px;
+}
+
+.btn:hover
+{
+	background-color: #d35400;
+	transition: all 0.4s;
+}
+
+.btn-ghost:hover{
+	color: white;
+}
+
+
+.btn-full:hover{
+	color: white;
+
+}
+
+/*Logo Section*/
+
+
+ .logo{
+ 	height: 100px;
+ 	width: auto;
+ 	float: left;
+ 	margin-top: 10px;
+ }
+
+
+.main-nav{
+	list-style: none;
+	float: right;
+
+}
+
+.main-nav li{
+	display: inline-block;
+	margin-left: 37px;
+	margin-top: 38px;
+
+
+
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+	padding: 8px 0;
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 18px;
+	word-spacing: 3px;
+	border-bottom: 2px solid transparent;
+	transition: border-bottom 0.3s;
+	transition: font-size 0.1s; 
+}
+
+.main-nav li a:hover,
+.main-nav li a:active ,
+input[type=submit]:hover{
+	border-bottom: 2px solid #e67e22;
+	font-size: 104%;
+	cursor: pointer;	
+	
+}
+
+/*--------------------------
+          Icons
+----------------------------*/
+
+.ion-ios-infinite{
+	font-size: 300%;
+	color: #ff9933;
+	margin-left: 80px;
+
+}
+
+.ion-happy-outline{
+	font-size: 300%;
+	color: #b3cccc;
+	margin-left: 80px;
+
+}
+.ion-heart{
+	font-size: 300%;
+	color: #ff3333;
+	margin-left: 80px;
+}
+
+.ion-android-time{
+	font-size: 300%;
+	color: rgba(255, 153, 0,0.4);
+	margin-left: 80px;
+
+
+}
+
+/*----------------------------
+          MEALS
+-------------------------------*/
+.section-meals{
+	padding: 0;
+}
+
+.meals-showcase{
+	list-style: none;
+	width: 100%;
+}
+
+.meals-showcase li{
+	display: block;
+	float: left;
+	width: 25%;
+}
+ 
+.meals-photos{
+	width: 100%;
+	margin: 0px;
+	background-color: black;
+	overflow: hidden;
+} 
+
+.meals-photos img{
+	width: 100%;
+	height: auto;
+	transform: scale(1.15);
+	
+	opacity: 0.7;
+
+}
+
+.meals-photos img:hover{
+	transition: transform 0.3;
+	transform: scale(1);
+	transition: opacity 0.3;
+	opacity: 1;
+}
+
+
+
+
+
+
+
+/*----------------------------
+          How it Works
+-------------------------------*/
+.section-steps{
+	margin-top: 40px;
+	background-color: rgba(240, 245, 245,0.7);
+}
+
+.steps-box{
+	margin-top: 30px;
+}
+
+
+.steps-box:first-child{
+	text-align: right;
+	padding: 3%;
+}
+
+
+.steps-box:last-child{
+	padding: 3%;
+}
+
+.apps-Iphone{
+	width: 40%;
+}
+	
+.How-itiworks{
+	margin-bottom: 30px;
+}
+
+
+.How-it-works div{
+	color: #e67e22;
+	border: 2px solid #e67e22;
+	display: inline-block;
+	border-radius: 50%;
+	height: 60%
+	width:40%;
+	text-align: center;
+	padding: 2.8%;
+	float: left;
+	margin-top: 10px;
+}
+
+.How-it-works p{
+
+	margin-top: auto;
+	margin-right: 20px;
+	padding: 3%;
+	margin-left: 40px;
+}
+
+.store img{
+	margin-top: 70px;
+	height: 50px;
+	width: auto;
+	cursor: pointer;
+}
+
+
+
+/*----------------------------
+         Cities
+-------------------------------*/
+
+
+
+
+
+.cities img{
+	height: 100%;
+	width: 100%;
+	margin-bottom: 15px;
+	
+
+}
+
+
+
+.city-feature{
+	margin-bottom: 5px;
+	margin-right: 50px;
+}
+
+.icons-city{
+	text-align: center;
+	line-height: 120%;
+	display: inline-block;
+	width: 30px;
+	font-size: 120%;
+	vertical-align: middle;
+	line-height: 120%;
+	margin-right: 10px;
+	margin-top: -5px;
+
+}
+
+.ion-ios-person{
+	color: lightgrey;
+	
+
+}
+.ion-ios-star{
+	color: orange;
+   
+}
+.ion-social-twitter{
+	color: #38A1F3;
+	
+
+}
+
+/*-------------Twitter Link------------------*/
+
+a:link,
+a:visited{
+	color: #38A1F3;
+	text-decoration: none;
+	border-bottom: 1px solid transparent;
+	padding-bottom: 1.5px;
+	transition: border-bottom 0.3s,color 0.3s;
+
+}
+
+a:hover,
+a:active{
+	border-bottom: 1px solid #38A1F3;
+	color: ;
+
+
+}
+
+/*-------------Customer Section------------------*/
+
+.section-testimonials{
+	background-image: linear-gradient( rgba(189,195,199,0.8),rgba(248,255,174,0.8) ), url(../images/back-customers.jpg);
+	background-size: cover;
+	color: black;
+	background-attachment: fixed;
+}
+
+blockquote{
+	padding: 2%;
+	font-style: italic;
+	font-weight: bold;
+	line-height: 145%;
+	margin-top: 10px;
+}
+
+cite{
+	font-size: 90%;
+	margin-top: 25px;
+	display: block;
+}
+blockquote:before{
+	content: "\0201C";
+	font-size: 450%;
+
+}
+
+
+
+
+cite img{
+	height: 22%;
+	width: 22%;
+	border-radius:70%;
+	margin-right: 10px;
+	vertical-align: middle;
+	transition: all 0.4s;
+}
+ cite img:hover{
+ 	transform: scale(1.1);
+ }
+
+
+/*-----------Sign Up adn Plans------------*/
+
+
+.section-plans{
+	background-color: #f4f4f4;
+}
+
+
+.plans-box{
+	background-color: #fff;
+	border-radius: 5px;
+	margin-left: 5px;
+	width: 90%;
+	box-shadow:2px 2px 5px 5px rgba(0,0,0,0.4); 	
+
+}
+
+.plans-box div{
+	padding: 15px;
+	border-bottom: 1px solid #e8e8e8;
+}
+
+.plan-price{
+	font-size: 200%;
+	margin-bottom: 10px;
+	color: #e67e22;
+}
+
+.meal{
+	font-size: 140%;
+	color: black;
+}
+
+.plan-price span{
+	font-size: 50%;
+
+}
+
+
+.plans-box ul{
+	list-style: none;
+
+}
+
+.plans-box ul li{
+	padding: 5px 0px;
+	font-family: bold;
+}
+
+.icon-small{
+	margin-right: 15px;
+	color: orange;
+	font-size: 120%;
+
+}
+
+.plans-box div:last-child{
+	text-align: center;
+	
+}
+
+
+/*-------------FORM-------------------------*/
+
+.contact-form{
+	width: 60%;
+	margin: 0px auto;
+}
+
+
+input[type=text],
+input[type=Email], 
+select,
+textarea{
+	width: 60%;
+	padding: 7px;
+	border-radius: 	3px;
+}
+
+textarea{
+	height: 100px;
+}
+
+
+/*---------------Footer---------------*/
+
+footer{
+	background-color:#333;
+}
+
+
+footer ul li{
+	display: inline-block;
+	margin-right: 15px;
+}
+
+
+footer ul li i{
+	margin-right: 10px;
+	margin-bottom: 55px;
+	padding: 3px;
+}
+
+footer nav{
+	float: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
